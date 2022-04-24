@@ -141,12 +141,12 @@ body{
   cursor: pointer;
 }
 .card5 {
-  background: url("../devraj.jpeg")
+  background: url("../team/WhatsApp\ Image\ 2022-04-24\ at\ 11.38.39\ AM.jpeg")
     center center no-repeat;
   background-size: 300px;
 }
 .card5:hover {
-  background: url("../devraj.jpeg")
+  background: url("../team/WhatsApp\ Image\ 2022-04-24\ at\ 11.38.39\ AM.jpeg")
     left center no-repeat;
   background-size: 600px;
 }
