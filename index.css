@@ -1,0 +1,35 @@
+
+
+.navbar {
+  background-color: rgb(103, 101, 238);
+  /* border: 2px solid red; */
+}
+#logo {
+  width: 11% !important;
+  /* border: 3px solid red; */
+}
+.nav-link {
+  margin: 8px;
+  padding: 8px;
+}
+body {
+  background: lightblue url(/images/tech2.jpg);
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+  .collapse {
+    display: none !important;
+  }
+}
+
+.card {
+  transform-style: preserve-3d;
+  perspective: 1000px;
+}
+.card:hover {
+  box-shadow: 1px 3px 10px rgba(255, 255, 255, 1);
+}
+
+.card-header {
+  transform: translateZ(30px);
+}
+

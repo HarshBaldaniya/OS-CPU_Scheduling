@@ -1,0 +1,220 @@
+body{
+    scroll-behavior: smooth !important;
+}
+
+.customTooltip * {
+    color: #4a4a4a;
+    font-size: 18px;
+  }
+
+  .customTooltip .introjs-tooltip-title {
+    /* color: #0a41c9; */
+  }
+
+
+  .introjs-helperLayer {
+    background: rgba(0, 0, 0, 0.197) !important;
+    border: none !important;
+    border-radius: 10px !important;
+    box-shadow: 0 5px 12px 1px whitesmoke !important;
+}
+
+.introjs-skipbutton{
+    margin-right: -23px !important;
+    margin-bottom: 10px !important;
+}
+
+.introjs-tooltip-title{
+    font-size: 20px !important;
+    margin-left: -13px !important;
+    line-height: 35px !important;
+}
+
+.navbar{
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    position: fixed;
+    width: 100%;
+    padding: 0px 40px;
+    z-index: 1000;
+ 
+}
+.fcfs_demo{
+    margin: 50px 20px;
+}
+#logo{
+    width: 28%;
+    /* padding:5px; */
+    /* border: 3px solid red; */
+}
+.navbar-brand{
+    width: 13rem !important;
+}
+.nav-link{
+    margin: 8px;
+    padding: 8px;
+}
+body{
+    background: lightblue url(/images/peakpx.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    /* backdrop-filter: blur(10px); */
+    
+    color: aliceblue !important;
+
+}
+.BTN123{
+    background-color: rgba(176, 196, 222, 0.205);
+    transition: all 0.5s;
+}
+.BTN123:hover{
+    background-color: rgba(176, 196, 222, 0.548) !important;
+}
+.btn{
+    color: aliceblue !important;
+}
+@media (min-width: 768px) and (max-width: 1000px) {
+    .collapse {
+        display: none !important;
+    }
+ }
+
+ .logoname{
+    color: white !important;
+    text-decoration: none;
+    font-size: 1.8rem !important;
+    border: none !important;
+  }
+
+
+  /* mainpart */
+
+  @import "bourbon";
+  @import "neat";
+  *, *:before, *:after {
+      box-sizing: border-box;
+      outline: none;
+ }
+ 
+  figure {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 275px;
+      height: 367px;
+      margin: 20px;
+      border-radius: 10px;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+      overflow: hidden;
+ }
+  figure:hover {
+      box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+ }
+  figure:hover img {
+      transform: scale(1.25);
+ }
+  figure:hover figcaption {
+      bottom: 0;
+ }
+  figure h1 {
+      position: absolute;
+      top: 50px;
+      left: 20px;
+      margin: 0;
+      padding: 0;
+      color: white;
+      font-size: 60px;
+      font-weight: 100;
+      line-height: 1;
+ }
+  figure img {
+      height: 100%;
+      transition: 0.25s;
+ }
+  figure figcaption {
+      position: absolute;
+      bottom: -85%;
+      left: 0;
+      width: 100%;
+      margin: 0;
+      padding: 30px;
+      background-color: rgba(0, 0, 0, 0.85);
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.4);
+      color: white;
+      line-height: 1;
+      transition: 0.25s;
+ }
+  figure figcaption h3 {
+      margin: 0 0 20px;
+      padding: 0;
+ }
+  figure figcaption p {
+      font-size: 14px;
+      line-height: 1.75;
+ }
+  figure figcaption button {
+      position: relative;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 10px 10px 0;
+      padding: 10px 10px;
+      background-color: #1abc9c;
+      border: none;
+      border-radius: 5px;
+      color: white;
+      font-size: 14px;
+ }
+ 
+ .cardsarray{
+     display:flex;
+    
+     justify-content: space-around;
+position: absolute;
+top: 0%;
+left: 50%;
+/* margin-bottom: -20%; */
+transform: translate(-50%,60%);
+ }
+ .BUTTONHOLDER{
+     display: flex;
+ }
+
+ .first{
+     height: 100vh;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+    
+ }
+ .second{
+     position: relative;
+ }
+
+ .cpuscheduleimg{
+width: 800px;
+ }
+ .imagecontainer{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 18.5px );
+    -webkit-backdrop-filter: blur( 18.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    
+ }
+ .image-block{
+    background: rgba( 255, 255, 255, 0.05 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+ }

@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8" />
+    <title>SJF DESCRIPTION</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Alata&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/css/mainstyle.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+  </head>
+
+  <body>
+    <div class="mid">
+      <a href="/index.html" style="color: aliceblue; text-decoration: none">
+        <h1>Longest Remaining Time First</h1>
+      </a>
+    </div>
+
+    <div class="mainpart123">
+      <h2 data-aos="zoom-out-right" data-aos-delay="400" data-aos-once="false">
+        What is SJF Method?
+      </h2>
+      <p data-aos="zoom-out-right" data-aos-delay="400" data-aos-once="false">
+        This is a pre-emptive version of Longest Job First (LJF) scheduling
+        algorithm. In this scheduling algorithm, we find the process with the
+        maximum remaining time and then process it. We check for the maximum
+        remaining time after some interval of time(say 1 unit each) to check if
+        another process having more Burst Time arrived up to that time.
+      </p>
+
+      <h2 data-aos="zoom-out-right" data-aos-delay="700" data-aos-once="false">
+        Procedure of SJF method
+      </h2>
+      <li data-aos="zoom-out-right" data-aos-delay="700" data-aos-once="false">
+        Step-1: First, sort the processes in increasing order of their Arrival
+        Time.
+      </li>
+      <li data-aos="zoom-out-right" data-aos-delay="700" data-aos-once="false">
+        Step-2: Choose the process having least arrival time but with most Burst
+        Time. Then process it for 1 unit. Check if any other process arrives
+        upto that time of execution or not.
+      </li>
+      <li data-aos="zoom-out-right" data-aos-delay="700" data-aos-once="false">
+        Step-3: Repeat the above both steps until execute all the processes.
+      </li>
+
+      <h2 data-aos="zoom-out-right" data-aos-delay="1000" data-aos-once="false">
+        Characteristics of SJF method
+      </h2>
+      <li data-aos="zoom-out-right" data-aos-delay="1000" data-aos-once="false">
+        Longest Remaining Time First is a CPU scheduling algorithm used to
+        determine the process to be executed first among all the incoming
+        processes in a systematic way.
+      </li>
+      <li data-aos="zoom-out-right" data-aos-delay="1000" data-aos-once="false">
+        It follows the preemptive approach i.e. CPU is allocated only for a
+        fixed slice of time.
+      </li>
+      <li data-aos="zoom-out-right" data-aos-delay="1000" data-aos-once="false">
+        The criteria for process selection is highest burst size and this
+        process runs till the fixed slice. The selection process takes place
+        again.
+      </li>
+      <li data-aos="zoom-out-right" data-aos-delay="1000" data-aos-once="false">
+        This is not an optimal scheduling algorithm as the average waiting time
+        is high.
+      </li>
+
+      <h2 data-aos="zoom-out-right" data-aos-delay="1300" data-aos-once="false">
+        Advantages of SJF
+      </h2>
+      <li data-aos="zoom-out-right" data-aos-delay="1300" data-aos-once="false">
+        SJF algorithm is simple and easy to implement.
+      </li>
+      <li data-aos="zoom-out-right" data-aos-delay="1300" data-aos-once="false">
+        Almost all the processes complete by the time the longest job reaches
+        its completion.
+      </li>
+      <li data-aos="zoom-out-right" data-aos-delay="1300" data-aos-once="false">
+        Starvation-free as all processes get fair share of CPU.
+      </li>
+
+      <h2 data-aos="zoom-out-right" data-aos-delay="1600" data-aos-once="false">
+        Disadvantages of SJF
+      </h2>
+      <li data-aos="zoom-out-right" data-aos-delay="1600" data-aos-once="false">
+        The context switch consumes CPU’s valuable time which can be utilized
+        for executing processes.
+      </li>
+      <li data-aos="zoom-out-right" data-aos-delay="1600" data-aos-once="false">
+        Smaller processes need to wait for CPU to finish larger burst size
+        processes.
+      </li>
+      <li data-aos="zoom-out-right" data-aos-delay="1600" data-aos-once="false">
+        The average waiting time and average turn-around time are much high even
+        with much less burst time of each process.
+      </li>
+    </div>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+  </body>
+</html>

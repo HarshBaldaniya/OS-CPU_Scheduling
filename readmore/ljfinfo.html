@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8" />
+  <title>LJF DESCRIPTION</title>
+  <link href="https://fonts.googleapis.com/css2?family=Alata&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="/css/mainstyle.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+</head>
+
+<body>
+  <div class="mid">
+    <a href="/index.html" style="color: aliceblue; text-decoration: none">
+      <h1>Longest Job First</h1>
+    </a>
+  </div>
+
+  <div class="mainpart123">
+    <h2 data-aos="zoom-out-right" data-aos-delay="400" data-aos-once="false">What is LJF Method?</h2>
+    <p data-aos="zoom-out-right" data-aos-delay="400" data-aos-once="false">
+      Longest Job First (LJP) is a non-preemptive scheduling algorithm. This
+      algorithm is based upon the burst time of the processes. The processes are
+      put into the ready queue based on their burst times i.e., in a descending
+      order of the burst times. As the name suggests this algorithm is based
+      upon the fact that the process with the largest burst time is processed
+      first. The burst time of only those processes is considered that have
+      arrived in the system until that time.
+    </p>
+
+    <h2 data-aos="zoom-out-right" data-aos-delay="600" data-aos-once="false">Procedure of LJF method</h2>
+    <li data-aos="zoom-out-right" data-aos-delay="600" data-aos-once="false">
+      Step-1:First, sort the processes in increasing order of their Arrival
+      Time.
+    </li>
+    <li data-aos="zoom-out-right" data-aos-delay="800" data-aos-once="false">
+      Step-2:Choose the process having highest Burst Time among all the
+      processes that have arrived till that time. Then process it for its burst
+      time. Check if any other process arrives until this process completes
+      execution.
+    </li>
+    <li data-aos="zoom-out-right" data-aos-delay="1000" data-aos-once="false">
+      Step-3:Repeat the above both steps until all the processes are executed.
+    </li>
+
+    <h2 data-aos="zoom-out-right" data-aos-delay="1200" data-aos-once="false">Note</h2>
+    <p data-aos="zoom-out-right" data-aos-delay="1400" data-aos-once="false">
+      If two processes have the same burst time then the tie is broken using
+      FCFS i.e., the process that arrived first is processed first.
+    </p>
+
+    <h2 data-aos="zoom-out-right" data-aos-delay="1600" data-aos-once="false">Disadvantages of LJF</h2>
+    <li data-aos="zoom-out-right" data-aos-delay="1600" data-aos-once="false">
+      This algorithm gives very high average waiting time and average
+      turn-around time for a given set of processes.
+    </li data-aos="zoom-out-right" data-aos-delay="1800" data-aos-once="false">
+    <li data-aos="zoom-out-right" data-aos-delay="1800" data-aos-once="false">This may lead to convoy effect.</li>
+    <li data-aos="zoom-out-right" data-aos-delay="2000" data-aos-once="false">
+      It may happen that a short process may never get executed and the system
+      keeps on executing the longer processes.
+    </li>
+    <li data-aos="zoom-out-right" data-aos-delay="2200" data-aos-once="false">
+      It reduces the processing speed and thus reduces the efficiency and
+      utilization of the system.
+    </li>
+  </div>
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+
+</html>
