@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SHORTEST REMAINING TIME FIRST</title>
+    <title>SHORTEST JOB FIRST</title>
     <link rel="stylesheet" href="../css/demo.css">
     <link rel="stylesheet" href="../css/header.css">
     <link rel="stylesheet" href="../css/respo.css">
@@ -77,7 +77,7 @@
 
     <br>
     <div class="fcfs_demo" style="margin-top: 50px;">
-    <h1 style="color: #FCED53;">SHORTEST REMAINING TIME FIRST</h1>
+    <h1 style="color: #FCED53;">SHORTEST JOB FIRST</h1>
     <!-- <button class="btn" id="withoutIO">without IO</button>
     <button class="btn" id="withIO">with IO</button> -->
     <!-- <label style="font-size: 20px; width: 60px;height: 34px;">IO</label>
@@ -86,8 +86,7 @@
         <span class="slider round"></span>
       </label> -->
     <br>
-    <input type="number" id="process" placeholder="Enter Total process" min="0" oninput="this.value = 
-    !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null">
+    <input type="number" id="process" placeholder="Enter Total process">
     <button class="btn BTN123" id="add">ADD ROWS</button>
     <br><br>
 
@@ -98,6 +97,7 @@
 
         <div class="item ans" style="border: 2px solid black;">Completion Time</div>
         <div class="item ans" style="border: 2px solid black;">Turn Around Time</div>
+        <div class="item ans" style="border: 2px solid black;">Waiting Time</div>
     </div>
 
     <div id="container_IO">
@@ -108,32 +108,28 @@
 
         <div class="item ans" style="border: 2px solid black;">Completion Time</div>
         <div class="item ans" style="border: 2px solid black;">Turn Around Time</div>
-        <!-- <div class="item ans" style="border: 2px solid black;">Waiting Time</div> -->
+        <div class="item ans" style="border: 2px solid black;">Waiting Time</div>
     </div>
     
     <div id="data">
         <label class="cen">0</label>
-        <input type="number" class="cen" min="0" oninput="this.value = 
-        !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null">
-        <input type="number" class="cen" min="1" oninput="this.value = 
-        !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null">
+        <input type="number" class="cen">
+        <input type="number" class="cen">
         <label class="ans"></label>
         <label class="ans"></label>
-        <label class="ans lastpart3"></label>
+        <label class="ans"></label>
     </div>
 
     <div id="data_IO">
         <label class="cen">0</label>
-        <input type="number" class="cen" class="cen" min="0" oninput="this.value = 
-        !!this.value && Math.abs(this.value) >= 0 ? Math.abs(this.value) : null">
-        <input type="number" class="cen" class="cen" min="0" oninput="this.value = 
-        !!this.value && Math.abs(this.value) >= 1 ? Math.abs(this.value) : null"> 
+        <input type="number" class="cen">
+        <input type="number" class="cen">
         <div class="cen" style="overflow: auto;">
             <input type="number" class="cen_IO" placeholder="BT" style="width:60px;">
         </div>
         <label class="ans"></label>
         <label class="ans"></label>
-        <label class="ans lastpart3"></label>
+        <label class="ans"></label>
     </div>
     <br>
     <button id="add_row" class="btn BTN123">Add Row</button>
@@ -143,6 +139,7 @@
     <button id="reset" class="btn BTN123">Reset</button>
     <br><br>
 
+    <!-- <button id="animate" class="btn">Animate</button> -->
 
     <div id="animateAll">
         <label class="start"></label>
@@ -154,13 +151,13 @@
     <div class="avg">
         <span class="b">Average Turn Around Time </span>
         <label class="a" id="avg_tat"></label>
-        <!-- <span class="b">Average Waiting Time </span> -->
-        <!-- <label class="a" id="avg_wat"></label> -->
+        <span class="b">Average Waiting Time </span>
+        <label class="a" id="avg_wat"></label>
     </div>
   </div>
 </body>
 <script src="../js/jquery.js"></script>
-<script type="module" src="../js/srtf.js"></script>
+<script type="module" src="../js/sjf.js"></script>
 <script src="../js/priority-queue.js"></script>
 
 </html>
