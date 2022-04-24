@@ -59,7 +59,7 @@ body{
     padding: 8px;
 }
 body{
-    background: lightblue url(/images/peakpx.jpg);
+    background: lightblue url(./images/peakpx.jpg);
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
